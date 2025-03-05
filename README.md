@@ -105,6 +105,9 @@ This guide is designed to support both junior and mid-level Android developers b
 - **Use Hilt or Dagger:**  
   Integrate dependency injection frameworks such as **Hilt** or **Dagger** to manage class dependencies efficiently, simplify testing, and enhance code modularity.
 
+- **Use Koin DI for Jetpack Compose Apps:**  
+  Integrate dependency injection framework  **KOIN** to manage class dependencies efficiently, simplify testing, and enhance code modularity in Jetpack Compose Apps.
+  
 - **Gradle and Libraries:**  
   Regularly update your dependencies and use Gradle’s dependency management features to avoid version conflicts. Maintain an `.env.example` or configuration guide for environment variables used in your project.
 
@@ -199,6 +202,80 @@ This guide is designed to support both junior and mid-level Android developers b
 - **Perform Manual Checks:**  
   If you use AI to generate code, ensure you manually verify every case before committing the changes.
 
+## Chapter 4: Version Control and Collaboration Practices
+
+Version control is a cornerstone of modern development, and mastering Git and GitHub is essential for smooth collaboration and project stability. This chapter outlines best practices for managing commits, pushes, pulls, merges, branches, and more.
+
+### 4.1 Repository Setup and Initialization
+
+- **Initialize Your Repository:**  
+  Use `git init` to create a new repository, or clone an existing one with `git clone <repository-url>`.
+
+- **Configure Remotes:**  
+  Add and manage remote repositories using `git remote add origin <repository-url>` to ensure your local work syncs with the remote server.
+
+### 4.2 Branching Strategy
+
+- **Create Feature Branches:**  
+  Always start new work on a dedicated branch. Use descriptive names, such as `feature/user-authentication` or `bugfix/login-crash`, to clearly indicate the purpose of the branch.
+
+- **Adopt a Branching Model:**  
+  Follow models like Git Flow or Trunk-Based Development. This helps in managing parallel development streams and smooth integration into the main branch.
+
+- **Keep Branches Updated:**  
+  Regularly pull changes from the main branch to your feature branch to minimize merge conflicts.
+
+### 4.3 Committing Changes
+
+- **Write Clear Commit Messages:**  
+  Use the imperative mood (e.g., "Add authentication feature") and include concise descriptions of what the commit does.
+
+- **Commit Often and In Small Chunks:**  
+  Break your work into logical, small commits rather than large, monolithic ones. This makes it easier to track changes and revert specific parts if needed.
+
+- **Stage Thoughtfully:**  
+  Use `git add <file>` or `git add -p` to stage changes selectively. Always review diffs (`git diff`) before committing.
+
+### 4.4 Pushing and Pulling
+
+- **Push Your Changes:**  
+  After committing locally, use `git push origin <branch-name>` to update the remote repository.
+
+- **Pull Frequently:**  
+  Use `git pull` to fetch and integrate changes from the remote repository. This helps in keeping your branch synchronized and reducing conflicts.
+
+- **Avoid Force Pushing:**  
+  Steer clear of using `git push --force` unless absolutely necessary. Force pushes can overwrite others' work and disrupt the shared history.
+
+### 4.5 Merging and Pull Requests
+
+- **Open Pull Requests (PRs):**  
+  When your work is ready, create a pull request on GitHub. Provide a detailed description of your changes and reference any relevant issues.
+
+- **Conduct Thorough Code Reviews:**  
+  Participate in code reviews to ensure quality and consistency. Address any feedback or requested changes before merging.
+
+- **Merge Strategies:**  
+  Choose an appropriate merge strategy:
+  - **Merge Commit:** Preserves the history of the branch.
+  - **Squash and Merge:** Combines all commits into one for a cleaner history.
+  - **Rebase and Merge:** Rewrites commit history for a linear progression.
+
+- **Resolve Conflicts Carefully:**  
+  If merge conflicts occur, resolve them locally, test your changes, and then complete the merge process.
+
+### 4.6 Additional Best Practices
+
+- **Tagging Releases:**  
+  Use `git tag` to mark significant milestones or release points in your project for easy reference.
+
+- **Rebasing for a Clean History:**  
+  Use `git rebase` to integrate changes and maintain a linear history. Be cautious with rebasing shared branches.
+
+- **Backup Regularly:**  
+  Ensure your local work is backed up by frequently pushing to the remote repository.
+
+By following these Git and GitHub practices, you'll promote a collaborative workflow, maintain a clean project history, and reduce the risk of integration issues. Happy coding and collaborating!
 
 ---
 
