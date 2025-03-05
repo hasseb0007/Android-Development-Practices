@@ -188,6 +188,18 @@ This guide is designed to support both junior and mid-level Android developers b
 - **Code Coverage:**  
   Ensure tests cover critical paths.
 
+# Code Verification Guidelines
+
+- **Always Review Your Code:**  
+  Each time you write code, take the time to review it for potential issues and performance optimizations.
+
+- **Utilize AI Tools:**  
+  Leverage tools like ChatGPT to help spot bugs and suggest improvements.
+
+- **Perform Manual Checks:**  
+  If you use AI to generate code, ensure you manually verify every case before committing the changes.
+
+
 ---
 
 ## Conclusion
