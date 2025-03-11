@@ -102,7 +102,9 @@ This guide is designed to support both junior and mid-level Android developers b
 - **Naming Conventions:**
   - Use `camelCase` for variables and functions.
   - Use `PascalCase` for classes and UI components.
-  - Reserve `UPPER_SNAKE_CASE` for constants.  
+  - Reserve `UPPER_SNAKE_CASE` for constants.
+  - All names must be meaningful or serve a purpose. Names like `text_1` or `string2` should not be used.
+  - For XML files name should be `lower_snake_case` with first word representing view and rest of the words represent a meaningful purpose. For example: for text views use `tv_{whatever_this_text_represents}`, for button use `btn_{purpose}`, for card view use `card_{purpose}`, for constraint layout use `cl_{purpose}`, for image view use `iv_{purpose}` etc.
   Consistency improves code readability and maintainability.
 
 - **Modular Architecture:**  
